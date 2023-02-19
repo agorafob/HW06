@@ -1,3 +1,7 @@
+package user;
+
+import phone.Phone;
+
 public class User {
     private int id;
     private String sName;
@@ -74,6 +78,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "ID: " + getId() + ",Surname: " + getsName() + ",Name: " + getName() + ",Fathers Name: " + getfName() + ",CC Number: " + getCreditCartNumber() + ",Address: " + getAddress().toString() + ",Phone details: " + getPhone().toString();
+        return "ID: " + getId() + ",Surname: " + getsName() + ",Name: " + getName() + ",Fathers Name: " + getfName() + ",CC Number: " + getCreditCartNumber() + ",user.Address: " + getAddress().toString() + ",phone.Phone details: " + getPhone().toString();
     }
 }

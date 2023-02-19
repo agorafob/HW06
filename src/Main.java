@@ -1,3 +1,6 @@
+import storage.Storage;
+import user.User;
+
 public class Main {
     static final Storage NEW_STORAGE = new Storage();
 

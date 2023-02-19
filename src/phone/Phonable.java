@@ -1,3 +1,5 @@
+package phone;
+
 public interface Phonable {
 
     void addCredit(int amount);

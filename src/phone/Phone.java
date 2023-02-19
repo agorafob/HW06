@@ -1,3 +1,7 @@
+package phone;
+
+import phone.Phonable;
+
 public class Phone implements Phonable {
 
     private int debt;
@@ -45,8 +49,8 @@ public class Phone implements Phonable {
         if (amount > 0 && this.credit == 0 && this.debt == 0) {
             this.credit = this.credit + amount;
         } else if (amount > 0 && this.credit == 0 && this.debt < 0 && (this.debt + amount) > 0) {
-            this.debt = 0;
             this.credit = (this.debt + amount);
+            this.debt = 0;
         } else if (amount > 0 && this.credit == 0 && this.debt < 0 && (this.debt + amount) <= 0) {
             this.debt += amount;
         } else {

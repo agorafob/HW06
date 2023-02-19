@@ -1,3 +1,7 @@
+package storage;
+
+import user.User;
+
 import java.util.Arrays;
 
 public class Storage implements PhoneInfo {
@@ -7,7 +11,7 @@ public class Storage implements PhoneInfo {
     public void clear() {
         Arrays.fill(this.storage, null);
         this.storageSize = 0;
-        System.out.println("Storage cleared");
+        System.out.println("storage.Storage cleared");
     }
 
     public void save(User user) {
@@ -28,7 +32,7 @@ public class Storage implements PhoneInfo {
     public User[] getAll() {
         User[] allUsers = new User[this.storageSize];
         if (this.storageSize == 0) {
-            System.out.println("Storage is empty");
+            System.out.println("storage.Storage is empty");
         } else {
             allUsers = Arrays.copyOf(this.storage, this.storageSize);
         }

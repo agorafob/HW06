@@ -1,3 +1,5 @@
+package storage;
+
 public interface PhoneInfo {
 
     void getUserByCityCall(int minutes );
